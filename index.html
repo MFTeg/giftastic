@@ -9,12 +9,45 @@
     <link rel="stylesheet" text="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" text="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class="jumbotron" id="header">
+        <h1>Giftastic</h1>
+        <h4>Click the buttons to display relevant gifs</h4>
+    </div>
 
-    <script src="assets/javascript/app.js"></script>
+    <form class="form-inline" id="animalSearch">
+        <div class="form-group">
+            <label for="animalInput">Search for an Animal</label>
+            <input type="text" id="animalInput">
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="container">
+            <div class="btn-group inline pull-left">
+                <button class="btn btn-primary" id="show" data-search="Otter">Otter</button>
+                <button class="btn btn-primary" id="show" data-search="Cats">Cats</button>
+                <button class="btn btn-primary" id="show" data-search="Bunnies">Bunnies</button>
+                <button class="btn btn-primary" id="show" data-search="Horses">Horses</button>
+
+                <div id="myButtons"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifArea"></div>
+            </span>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 
 </html>
